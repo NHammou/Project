@@ -1,0 +1,42 @@
+/* M2LO13 */
+ul {
+    font-family: 'Trebuchet MS', Helvetica, sans-serif;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+/* M2LO14 */
+/* M2LO12 */
+/* M2LO3 Style Inheritance */
+body{
+    color: red;
+    background-color: rgb(212, 197, 99);
+    background-color: hsl(52, 57%, 61%);
+}
+
+/* M2LO15 */
+/* M2LO5 */
+/* M2LO3  */
+p {
+    letter-spacing: 0.1em;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+footer{
+    background-color: brown;
+}
+/* M2LO11 */
+/* M2LO3 Style Precedence */
+article > p::first-letter{
+    font-style: italic;
+}
+a:hover{
+    color:blue;
+}
+/* M2LO5 */
+h2 {
+    text-indent: 5em;
+}
+
+
