@@ -1,0 +1,17 @@
+/*
+Nouh Hammou
+5.16.2020
+Project V2
+cssreset.css
+*/
+/* M3LO1 Demonstrate the use of a CSS reset style sheet (CSS, note where you have CSS reset rules) */
+body, header, article, footer, nav, div{
+    display: block;
+}
+body, header, article, footer, nav, div, h1, h2, ul, ol, li, p {
+    background: transparent;
+    font-size: 100%;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+}

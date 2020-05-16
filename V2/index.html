@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Actress: Erin O'Brien</title>
+     <!--
+       CIS 155 Project V2
+       Author:  Nouh Hammou
+       Date:    5/15/2020
+       Filename: index.html
+      -->
+
+    <!-- M3LO1 Demonstrate the use of a CSS reset style sheet (CSS, note where you have CSS reset rules) -->
+      <link href="cssreset.css" rel="stylesheet" /> 
+      <link href="styles.css" rel="stylesheet" />
+      <style>
+        footer > p {
+            color: rgb(68, 68, 102); 
+            font-family: monospace;
+        }
+      </style>
+
+  </head>
+
+  <body>
+    <header>
+        <!-- M4LO1 Demonstrate the use of figure boxes (HTML) Used the figurebox to give a figcaption, changed style to bold, and added some padding. styles.css line 91-->
+        <figure>
+            <img id="top" src="imagefolder2/erin2.jpg" alt=""  usemap="#head" />
+            <figcaption>Erin O'Brien</figcaption>
+        </figure>
+        <nav>
+            <ul>
+                <li><a href="index.html">	&#123;Home&#125;</a></li>
+                <li><a href="pictures.html">	&#123;Pictures&#125;</a></li>
+                <li><a href="stories.html">	&#123;Stories&#125;</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <article>
+          <h1 style="color: rgb(224, 201, 201); font-size: 2em;">Erin O'Brien</h1>
+          <p>
+              This is a web page dedicated to my grandmother Erin O'Brien. I plan to use this web page to display some of the exciting things she did with her life when she was an actress and singer. 
+          </p>
+          <p>
+              Updates on the website:
+              <ol>
+                  <li><p>A page with 2 short descriptions of pictures has been made. </p></li>
+                  <li><p>A page to compile all of her images on has been made and currently has 5 images. </p></li>
+                  <li><p>Site looks completely different and fits its intented purpose better. </p></li>
+              </ol>
+          </p>
+    </article>
+    <!-- M4LO7 Demonstrate the use of image maps, including determining x and y values (HTML) -->
+    <map name="head">
+        <area shape="rect" coords="0, 0, 300, 388" href="pictures.html" alt="" />
+    </map>
+    <footer>
+        <p><a href="#top">Back to Top</a></p>
+        <p>I will use <a href="http://www.glamourgirlsofthesilverscreen.com/show/321/Erin+O%27Brien/index.html">this</a>
+            as a web page I gather information from.</p>
+    </footer>
+  </body>
+</html>
