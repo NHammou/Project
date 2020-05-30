@@ -13,20 +13,21 @@
       -->
       <link href="cssreset.css" rel="stylesheet" /> 
       <link href="styles.css" rel="stylesheet" />
-      <link href="phone.css" media="handheld" />  
+      <link href="phone.css" media="screen" />  
+      <style>
+        ul.submenu {
+          display:none;
+        }
+        ul.submenu:hover {
+          display:block;
+        }
+        a.submenuTitle:hover+ul.submenu, ul.submenu:hover {
+          display:block;
+        }
+      </style>
   </head>
   <!-- M5LO4 Use CSS for pull-down menus (or collapsible/expandable areas) (CSS, note where the menu is on your site and how it behaves) if you put the cursor over nav a dropdown menu appears with the Home, Pictures, and Stories links-->
-  <style>
-    ul.submenu {
-      display:none;
-    }
-    ul.submenu:hover {
-      display:block;
-    }
-    a.submenuTitle:hover+ul.submenu, ul.submenu:hover {
-      display:block;
-    }
-  </style>
+
   <body class="flex">
     <header>
       <img id="top" width="300" height="388" src="imagefolder2/20200425_1339452.jpg" alt="" />

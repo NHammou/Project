@@ -12,21 +12,21 @@
       -->
       <link href="cssreset.css" rel="stylesheet" /> 
       <link href="styles.css" rel="stylesheet" />
-      <link href="table.css" rel="stylesheet" />
-      
+      <link href="table.css" rel="screen" />
+      <style>
+        ul.submenu {
+          display:none;
+        }
+        ul.submenu:hover {
+          display:block;
+        }
+        a.submenuTitle:hover+ul.submenu, ul.submenu:hover {
+          display:block;
+        }
+      </style>
   </head>
   <!-- M5LO4 Use CSS for pull-down menus (or collapsible/expandable areas) (CSS, note where the menu is on your site and how it behaves) -->
-  <style>
-    ul.submenu {
-      display:none;
-    }
-    ul.submenu:hover {
-      display:block;
-    }
-    a.submenuTitle:hover+ul.submenu, ul.submenu:hover {
-      display:block;
-    }
-  </style>
+
   <body>
     <header>
       <img id="top" width="300" height="388" src="imagefolder2/erinn.JPG" alt="" />
