@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Actress: Erin O'Brien</title>
+     <!--
+       CIS 155 Project V2
+       Author:  Nouh Hammou
+       Date:    5/15/2020
+       Filename: stories.html
+      -->
+      <link href="cssreset.css" rel="stylesheet" /> 
+      <link href="styles.css" rel="stylesheet" />
+      <link href="table.css" rel="stylesheet" />
+      
+  </head>
+  <!-- M5LO4 Use CSS for pull-down menus (or collapsible/expandable areas) (CSS, note where the menu is on your site and how it behaves) -->
+  <style>
+    ul.submenu {
+      display:none;
+    }
+    ul.submenu:hover {
+      display:block;
+    }
+    a.submenuTitle:hover+ul.submenu, ul.submenu:hover {
+      display:block;
+    }
+  </style>
+  <body>
+    <header>
+      <img id="top" width="300" height="388" src="imagefolder2/erinn.JPG" alt="" />
+      <nav class="horizontal">
+        <ul class="mainmenu">
+          <li><a href="#" class="submenuTitle">Nav</a>
+            <ul class="submenu">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="pictures.html">Pictures</a></li>
+              <li><a href="stories.html">Stories</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <article>
+      <h1 style="color: rgb(224, 201, 201); font-size: 2em;">Erin O'Brien</h1>
+          <p>
+            This is a page dedicated to my grandmother, Erin O'Brien. I will use this page to give some descriptions of some of the pictures on the pictures page.
+          </p>
+          <br>
+    </article>
+    <!-- M6LO3 Demonstrate how to create a table (HTML, explain table's purpose; it needs to be appropriate data for a table, and have at least 2 columns and 3 rows, 
+    appropriate use of thead/tbody/tfooter, and cells using th/td appropriately) table is to display 3 images followed by 3 descriptions with any additional info in the footer-->
+    <table id="pricing">
+      <colgroup>
+       <col id="firstCol" span="3" />
+       <col class="dataCols" span="2" />
+      </colgroup>
+      <thead>
+        <tr>
+          <th><img width="610" height="688" src="imagefolder2/20200425_133712.jpg" alt="" /></th>
+          <td><img width="610" height="688" src="imagefolder2/20200502_150535.jpg" alt="" /></td>
+          <td><img width="610" height="688" src="imagefolder2/erin5.jpg" alt="" /></td>             
+        </tr>  
+      </thead>
+      <tbody>
+         <tr>
+         <th>This is a picture of when my grandmother starred on the Frank Sinatra show.</th>
+         <th>This is a picture of my grandmother with Bob Hope rehearsing before arriving in Tokyo for a USO tour for the troops.</th>
+         <th>Will add info ASAP.</th>
+         </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <!-- M6LO4 Demonstrate how to span multiple rows or multiple columns in a table 
+            (HTML, document where you write HTML that causes a multi-row or multi-column span; say which one it is as well: row or column, or both) Text would normally wrap to col 1, but it instead continues into col 2-->
+          <th colspan="2">Unfortunately, I will not be able to add any more descriptions for V3 as my grandmother was hospitalized. I will update the page as soon as she is well enough to be asked.</th>
+        </tr>
+      </tfoot>  
+    </table>
+
+<br>
+<br>
+    <footer>
+        <p style="color: white; font-family: monospace;"><a href="#top">Back to Top</a></p>
+    </footer>
+  </body>
+</html>

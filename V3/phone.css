@@ -1,0 +1,14 @@
+@charset "UTF-8";
+@media only screen and (max-width: 640px) {
+    
+}
+/* M5LO4 Use CSS for pull-down menus (or collapsible/expandable areas) (CSS, note where the menu is on your site and how it behaves) */
+/*ul.submenu {
+    display:none;
+}
+ul.submenu:hover {
+    display:block;
+}
+a.submenuTitle:hover+ul.submenu, ul.submenu:hover {
+    display:block;
+}*/

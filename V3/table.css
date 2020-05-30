@@ -1,0 +1,15 @@
+/* M6LO7 Demonstrate how to format a table with CSS 
+(CSS, group your table styles together and note the overall impact they have on the HTML) 
+Creates a border around the table that is 5px, solid and grey. Makes the corners of the border rounded and adds padding to the left and right to attept to center the images in the table*/
+table {
+    background: linear-gradient(to bottom, rgb(99, 54, 95), rgb(0, 0, 0));
+    border-style: groove;
+    border-radius: 20px 20px 20px 20px;
+    border: 5px solid rgb(51, 51, 51);
+    padding-left: 10px;
+    padding-right: 10px;
+}
+/* makes the text in the tbody,tfoot a certain color. */ 
+tbody, tfoot {
+    color: rgb(124, 120, 120);
+}
