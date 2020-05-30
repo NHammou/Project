@@ -1,14 +1,10 @@
 @charset "UTF-8";
 /* Text */
-article > p::first-letter{
-    font-style: italic;
-}
 
 h2 {
     color: rgb(224, 201, 201);
     text-indent: 5em;
 }
-
 h1 {
     color: rgb(224, 201, 201);
 
@@ -60,31 +56,35 @@ img {
     border-style: groove;
     border-radius: 20px 20px 20px 20px;
 }
-
-/* Body */
 article {
     text-align: center;
     color: white;
     overflow: auto;
 }
+/* Flex Work */
+/* M5LO5 Demonstrate the use of flexboxes on a web page 
+(CSS document where you use flexboxes; explain their impact on the page's layout; this can be a new page or a redo of an existing page) causes the images to align with the first image*/
+body.flex {
+    flex-wrap: nowrap;
+}
 body> div > img {
-    float: left;
+    float:left;
 }
 body> div2 > img {
-    float: right;
+    display:inline-flex;
+    flex-direction: row;
 }
 body> div3 > img {
-    position: relative;
-    left: 200px;
+    display:inline-flex;
+    flex-direction: row;
 }
 body> div4 > img {
-    position: relative;
-    left: 475px;
+    display:inline-flex;
+    flex-direction: row;
 }
 body> div5 > img {
-    position: relative;
-    top:400px;
-    right: 925px;
+    display:inline-flex;
+    flex-direction: row;
 }
 body {
 
