@@ -1,0 +1,150 @@
+@charset "UTF-8";
+/* Text */
+
+h2 {
+    color: rgb(224, 201, 201);
+    text-indent: 5em;
+}
+h1 {
+    color: rgb(224, 201, 201);
+
+}
+p {
+    letter-spacing: 0.1em;
+    color: rgb(224, 201, 201);
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+
+#top{
+    text-align: center;
+}
+a[href]{
+    color: rgb(34, 50, 102);
+}
+a:link {
+    text-decoration: none;
+  }
+header>img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: rgb(51, 51, 51) 0px 0px 10px 10px;
+}
+
+/* Nav */
+ul {
+    font-family: 'Trebuchet MS', Helvetica, sans-serif;
+    list-style: none;
+    font-size: 1.5em;
+    margin: 0;
+    padding: 0;
+  }
+
+nav > ul > li > a {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+  } 
+nav {
+    display: table;
+    width: 10%;
+    border: 3px solid rgb(139, 134, 134);
+    background: linear-gradient(to top, rgb(53, 48, 48), black);
+}
+img {
+    border-style: groove;
+    border-radius: 20px 20px 20px 20px;
+}
+article {
+    text-align: center;
+    color: white;
+    overflow: auto;
+}
+/* Flex Work */
+/* M5LO5 Demonstrate the use of flexboxes on a web page 
+(CSS document where you use flexboxes; explain their impact on the page's layout; this can be a new page or a redo of an existing page) causes the images to align with the first image*/
+body.flex {
+    flex-wrap: nowrap;
+}
+body> div > img {
+    float:left;
+}
+body> div2 > img {
+    display:inline-flex;
+    flex-direction: row;
+}
+body> div3 > img {
+    display:inline-flex;
+    flex-direction: row;
+}
+body> div4 > img {
+    display:inline-flex;
+    flex-direction: row;
+}
+body> div5 > img {
+    display:inline-flex;
+    flex-direction: row;
+}
+body {
+
+    padding-bottom: 500px;
+}
+body {
+    background-image: url('background3.jpg');
+    background-repeat: round;
+    background-attachment: fixed;
+}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* Footer */
+footer{ 
+    text-align: left;
+    background-image: linear-gradient(white, grey);
+}
+footer {
+    position: fixed;
+    bottom: 1px;
+}
+/* Webform */
+/* M7LO11 Demonstrate how to format a form with CSS (group your form styles together in your CSS file, and document their overall impact on the form) 
+makes the border of the form curved, adds a black shading, changes the color of the text, adds some text padding, and floats it to the right. */
+form { 
+    display: block;
+    color: rgb(92, 31, 94);
+    box-shadow: black 5px 10px;
+    border-radius: 20px 20px 20px 20px;
+    background-color: grey;
+    padding: 5px;
+    position: absolute;
+    left: 1300px;
+    bottom: 500px;
+}
+/* M8LO12 Demonstrate how to format media with CSS (CSS, group your media styles together and describe their overall impact on the media feature of your page) 
+sets the width of the audio player, grooves the corners of the background and sets a gradient, adds a greyish shadow. */
+audio {
+    display: block;
+    box-shadow: rgb(104, 99, 99) 4px 4px 7.5px;
+    width: 15%;
+    background-image: linear-gradient(rgb(207, 203, 203), white);
+    border-radius: 10px 10px 10px 10px;
+}
+/* Animation */
+/* M8LO10 Demonstrate a CSS animation or transition (CSS, identify which is being done and its impact on the rendered HTML; note it has to include a time aspect, not be immediate) 
+causes the audio player to spin 360 deg when the page is loaded.*/
+@keyframes spin {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+}
+audio {
+    animation-name: spin;
+    animation-duration: 4s;
+}
+/* Iframe */
+iframe {
+    width: 380px;
+    height: 388px;
+}

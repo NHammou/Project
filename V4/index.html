@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Actress: Erin O'Brien</title>
+     <!--
+       CIS 155 Project V2
+       Author:  Nouh Hammou
+       Date:    5/15/2020
+       Filename: index.html
+      -->
+
+      <link href="cssreset.css" rel="stylesheet" /> 
+      <link href="styles.css" rel="stylesheet" />
+      <link href="phone.css" media="screen" rel="stylesheet" />  
+      <style>
+        footer > p {
+            color: rgb(68, 68, 102); 
+            font-family: monospace;
+        }
+      </style>
+      <style>
+        ul.submenu {
+          display:none;
+        }
+        ul.submenu:hover {
+          display:block;
+        }
+        a.submenuTitle:hover+ul.submenu, ul.submenu:hover {
+          display:block;
+        }
+      </style>
+  </head>
+  
+  <body>
+    <!-- M8LO7 Demonstrate the use of the <audio> element for embedding audio in a Web page (HTML) -->
+    <audio controls autoplay>
+      <source src="jazz.mp3" type="audio/mpeg">
+      <p><em>To play this audio, your browser needs to support HTML5.</em></p>
+    </audio>
+    <header>
+        <figure>
+          <img class="center" id="top" src="imagefolder2/erin2.jpg" alt=""  usemap="#head" />
+        </figure>
+        <nav class="horizontal">
+            <ul class="mainmenu">
+              <li><a href="#" class="submenuTitle">Nav</a>
+                <ul class="submenu">
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="pictures.html">Pictures</a></li>
+                  <li><a href="stories.html">Stories</a></li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+    </header>
+    <form id="questions" action="index.html" method="POST" enctype="text/plain">
+      <fieldset id="customerInfo">
+        <legend>Questionnaire</legend>
+
+        <label>Are you human?
+          <!-- M7LO6 Demonstrate the use of check boxes in a form -->
+          <input name="custRobot" id="box" type="checkbox" />
+        </label><br>
+        <label>Name:
+          <!-- M7LO5 Demonstrate the use of a text box in a form -->
+          <input name="custName" id="name" type="text" placeholder="(firstname) (lastname)" />
+        </label><br>
+        <!-- M7LO9 Demonstrate the use of a text area in a form -->
+      </fieldset>
+      <fieldset id="secondInfo">
+        <label>Enter your age:<br>
+          <!-- M7LO7 Demonstrate the use of radio buttons in a form -->
+          <input name="custAge" id="young" type="radio" value="young" />
+          <label for="young">18-25</label><br>
+          <input name="custAge" id="middle" type="radio" value="middle" />
+          <label for="middle">25-50</label><br>
+          <!-- note: I am not calling anyone over 50 old -->
+          <input name="custAge" id="old" type="radio" value="old" />
+          <label for="middle">50-90</label>
+        </label><br>
+        <textarea rows="3" cols="70" name="comments" form="">Comments...</textarea>
+        <input type="submit" value="Submit">
+      </fieldset>
+    </form>
+
+    <article>
+          <h1 style="color: rgb(224, 201, 201); font-size: 2em;">Erin O'Brien</h1>
+          <p>
+              This is a web page dedicated to my grandmother Erin O'Brien. I plan to use this web page to display some of the exciting things she did with her life when she was an actress and singer. 
+          </p><br>
+          <p>
+              CIS155. Nouh Hammou. Updates for V4. 6.15.2020
+              <ol>
+                  <li><p>Music can now be played when on the web page. Home page also has a form where you can input information. Audio player spins when loading the web page. </p></li>
+                  <li><p>Added info for the third picture on the stories page. Moved the page I took notes from to an iframe. (page doesn't support smaller formats)  </p></li>
+              </ol>
+          </p>
+    </article>
+    <!-- M8LO9  Demonstrate the use of the iframe element (HTML) -->
+    <iframe src="http://www.glamourgirlsofthesilverscreen.com/show/321/Erin+O%27Brien/index.html" title="glamourgirlsofthesilverscreen">
+    </iframe>
+    <map name="head">
+        <area shape="rect" coords="0, 0, 300, 388" href="pictures.html" alt="" />
+    </map>
+    <footer>
+        <p><a href="#top">Back to Top</a></p>
+        <p>I will use <a href="http://www.glamourgirlsofthesilverscreen.com/show/321/Erin+O%27Brien/index.html">this</a>
+            as a web page I gather information from. Music from <a href="https://www.bensound.com">bensound.com</a></p>
+    </footer>
+  </body>
+</html>

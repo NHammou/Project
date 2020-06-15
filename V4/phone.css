@@ -1,0 +1,15 @@
+@charset "UTF-8";
+/* M5LO3 Use media queries to format a page differently for phones vs. PCs. 
+(CSS, note where these are in your CSS and describe the overall impact they have on the site) removes the footer and changes the font size of the dropdown menu when viewed in mobile*/
+@media screen and (max-width: 640px) {
+    body>footer {
+        display: none;
+        background-image: none;
+    }
+    body>footer>p {
+        display: none;
+    }
+    ul {
+        font: 3em;
+    }
+}
